@@ -23,7 +23,7 @@ public class principal {
         int operacion =0;
         do {
             System.out.println(" Introduce Operacion a realizar");
-            System.out.println(" 1. suma \n 2. resta \n 3. multiplicacion \n 4. salir");
+            System.out.println(" 1. suma \n 2. resta \n 3. multiplicacion \n 4. division \n 5. salir");
             // leo por teclado un entero como opción del menú
             operacion =sc.nextInt();
             // segun valor elegido ejecuto método del objeto claculadora
@@ -31,11 +31,11 @@ public class principal {
             case 1: System.out.println( " la suma es "+ casio.suma() ); break;
             case 2: System.out.println( " la resta es "+ casio.resta() ); break;
             case 3: System.out.println(" la multipilcacion es "+ casio.multiplicacion()); break;
-            //case 4: System.out.println(" La division es " + casio.division()); break;
-            default: System.out.println(" Debes elegir una opción de 1 a 4");
+            case 4: System.out.println(" La division es " + casio.division()); break;
+            default: System.out.println(" Debes elegir una opción de 1 a 5");
             }
     
-        } while ( operacion != 4 );
+        } while ( operacion != 5 );
         
         System.out.println(" Gracias por usar la calculadora...hasta luegooooorrr");
         
